@@ -1,10 +1,15 @@
 参考链接：
+
 [原文](https://arzx.org/posts/2019-12-27-rime-%E4%BA%94%E7%AC%94-98-%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.html)
+
 [第一个 repo](https://github.com/arzyu/rime-wubi98)
+
 [第二个 repo](https://github.com/rime/rime-pinyin-simp)
+
 [符号输入](https://github.com/rime/rime-prelude)
 
 在 rime 的配置文件夹里面创建 `default.custom.yaml`，内容如下：
+
 ```yaml
 patch:
   schema_list:
