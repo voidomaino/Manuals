@@ -8,7 +8,9 @@
 
 [符号输入](https://github.com/rime/rime-prelude)
 
-在 rime 的配置文件夹里面创建 `default.custom.yaml`，内容如下：
+rime 的配置文件夹在 `$HOME/.local/share/fcitx5/rime`。
+
+在里面创建 `default.custom.yaml`，内容如下：
 
 ```yaml
 patch:
@@ -41,3 +43,4 @@ patch:
   "punctuator/import_preset": symbols
   "recognizer/patterns/punct": "^/([A-Z|a-z]*|[0-9]|10)$"
 ```
+
