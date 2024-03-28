@@ -1,14 +1,15 @@
 
 # INTEGER
 
-整型变量的显式声明描述：
+显式声明整型变量：
 
-```BNF
-<整型变量声明语句> ::= INTEGER ["("[KIND = ]<整型 KIND 值>")" | *<整型 KIND 值>] [::] <整型变量名表>
-<整型变量名表> ::= <变量名>[=<整数>]{,<变量名>[=<整数>]}
+```fortran
+INTEGER(KIND=2) a,b,c,d     ! 括号可以用 * 取代：INTEGER*2 a,b,c,d；推荐使用
+INTEGER(1) e,f,g            ! 当 KIND=1 时可以用 BYTE 取代：BYTE e,f,g
+INTEGER f                   ! 不指定整型 KIND 值则默认为 4；
+INTEGER(KIND=2) :: a=15, b  ! 仅当 :: 存在时整型变量可以在声明时赋初值。
+INTEGER(1) :: c=8#127
+INTEGER :: d=125
 ```
 
-不指定整型 `KIND` 值则默认为 `4`；当 `KIND` 值为 `1` 时可用 `BYTE` 代替 `INTEGER`。
-
-仅当 `::` 存在时整型变量可以在声明时赋初值。
-
+如果要声明无符号整型量，用 `UNSIGNED` 取代 `INTEGER`，建议少用。
