@@ -5,4 +5,5 @@
 
 ```fortran
 LOGICAL*4 a,b
+LOGICAL :: array(4) = .TRUE.
 ```

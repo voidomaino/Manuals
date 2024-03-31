@@ -1,7 +1,7 @@
 # PRINT & WRITE
 
 ```fortran
-PRINT*, 'output data: ', str1, i, j, 2*i+3*j, str2, a, log1, b, log2 
+PRINT *, 'output data: ', str1, i, j, 2*i+3*j, str2, a, log1, b, log2 
 PRINT 200, m, n
 PRINT "(1X, 'm+n= ', I4, 'm-n= ', I4)", m+n, m-n
 WRITE(*,200) m+n, m-n
