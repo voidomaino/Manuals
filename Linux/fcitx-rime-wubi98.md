@@ -44,3 +44,8 @@ patch:
   "recognizer/patterns/punct": "^/([A-Z|a-z]*|[0-9]|10)$"
 ```
 
+在 `wayland` 环境下使用 `fcitx5` 需要进行如下配置：
+
+1. 取消设置环境变量 `GTK_IM_MODULE`
+2. 在 `~/.gtkrc-2.0` 中加入一行 `gtk-im-module="fcitx"`
+3. 在 `~/.config/gtkrc-3.0/settings.ini` 中 `Setting` 条目下加入一行 `gtk-im-module=fcitx`
